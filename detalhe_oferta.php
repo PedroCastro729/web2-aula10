@@ -14,6 +14,7 @@ while($resultado = $stm->fetch(PDO::FETCH_ASSOC)) {
     echo "<p>{$resultado['descricao']}</p>";
     echo "<h3>{$resultado['valor']}</h3>";
     echo "<a href='{$resultado['link']}'>Comprar</a>";
+    echo "<h1>{$resultado['comentario']}</h1>";
 }
 
 
